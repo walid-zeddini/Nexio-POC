@@ -1,6 +1,23 @@
 # NEXIO
 
-This POC was generated in order to answer To Nexio Technical Request (M. Patrick)
+This POC was generated in order to answer To Nexio Technical Request (M. Patrick).
+
+## Front-end (POC)
+Angular 10
+## Back-end (POC)
+Spring Boot
+Spring Data
+JPA
+## API REST (POC)
+## Security (POC)
+Spring Security
+JWT
+## Database (POC)
+The Databse That I choose is PostgreSQL V12
+
+
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+All the following parts show how to run the POC from dev to prod:
 
 ## Development
 
@@ -175,9 +192,7 @@ If you need to re-run the Sonar phase, please be sure to specify at least the `i
 ./mvnw initialize sonar:sonar
 ```
 
-For more information, refer to the [Code quality page][].
-
-## Using Docker to simplify development (optional)
+## ## ## ##  NB: Using Docker to simplify development (optional)
 
 You can use Docker to improve your development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
 
@@ -205,12 +220,7 @@ Then run:
 ```
 docker-compose -f src/main/docker/app.yml up -d
 ```
-
-
 ## Main Tools (POC)
-
-The principal Technologies and tools used to develop this project are:
-
 [node.js]: https://nodejs.org/
 [yarn]: https://yarnpkg.org/
 [webpack]: https://webpack.github.io/
@@ -221,7 +231,3 @@ The principal Technologies and tools used to develop this project are:
 [protractor]: https://angular.github.io/protractor/
 [leaflet]: https://leafletjs.com/
 [definitelytyped]: https://definitelytyped.org/
-
-## Database Used (POC)
-
-The Databse That I used is PostgreSQL
