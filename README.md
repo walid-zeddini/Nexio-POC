@@ -7,17 +7,25 @@ It's deployed with at herokuapp : https://nexio-poc.herokuapp.com/
 ## Front-end (POC)
 Angular 10
 
+
+
 ## Back-end (POC)
 Spring Boot
 Spring Data
 JPA
 
 ## API REST (POC)
-## Security (POC)
+
+## Security & Auth (POC)
 Spring Security
-JWT
+JWT (Not OAuth2 because I have to use KeyCloak Authen. Server on line that I haven't done right now)
+
+
 ## Database (POC)
 The Databse That I choose is PostgreSQL V12
+
+
+
 
 
 ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
