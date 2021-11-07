@@ -33,9 +33,12 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/NEXIO_POC
-    username: zedgres
-    password: zedgres
+    url: jdbc:postgresql://ec2-34-239-34-246.compute-1.amazonaws.com:5432/dfamnl59gv18a7
+    username: ivdkweqnblixjl
+    password: ffe828967a09509a01200f400fdbc6b1eb01c00181d39a8d5578b0df5af869b6
+    # url: jdbc:postgresql://localhost:5432/NEXIO_POC
+    # username: zedgres
+    # password: zedgres
     hikari:
       poolName: Hikari
       auto-commit: false
