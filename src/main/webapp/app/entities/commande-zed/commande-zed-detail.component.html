@@ -23,13 +23,13 @@
                 <dt><span jhiTranslate="nexioApp.commande.produit">Produit</span></dt>
                 <dd>
                     <div *ngIf="commande.produit">
-                        <a [routerLink]="['/produit-zed', commande.produit?.id, 'view']">{{ commande.produit?.id }}</a>
+                        <a [routerLink]="['/produit-zed', commande.produit?.id, 'view']">{{ commande.produit?.marque }}</a>
                     </div>
                 </dd>
                 <dt><span jhiTranslate="nexioApp.commande.client">Client</span></dt>
                 <dd>
                     <div *ngIf="commande.client">
-                        <a [routerLink]="['/client-zed', commande.client?.id, 'view']">{{ commande.client?.id }}</a>
+                        <a [routerLink]="['/client-zed', commande.client?.id, 'view']">{{ commande.client?.nom }}</a>
                     </div>
                 </dd>
             </dl>

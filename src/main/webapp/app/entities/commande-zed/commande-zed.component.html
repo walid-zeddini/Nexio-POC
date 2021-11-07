@@ -39,12 +39,12 @@
                     <td>{{ commande.etat }}</td>
                     <td>
                         <div *ngIf="commande.produit">
-                            <a [routerLink]="['/produit-zed', commande.produit?.id, 'view']" >{{ commande.produit?.id }}</a>
+                            <a [routerLink]="['/produit-zed', commande.produit?.id, 'view']" >{{ commande.produit?.marque }}</a>
                         </div>
                     </td>
                     <td>
                         <div *ngIf="commande.client">
-                            <a [routerLink]="['/client-zed', commande.client?.id, 'view']" >{{ commande.client?.id }}</a>
+                            <a [routerLink]="['/client-zed', commande.client?.id, 'view']" >{{ commande.client?.nom }}</a>
                         </div>
                     </td>
                     <td class="text-right">
