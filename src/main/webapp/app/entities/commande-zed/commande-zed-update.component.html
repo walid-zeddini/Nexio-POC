@@ -63,7 +63,7 @@
                     <label class="form-control-label" jhiTranslate="nexioApp.commande.produit" for="field_produit">Produit</label>
                     <select class="form-control" id="field_produit" name="produit" formControlName="produit">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="produitOption.id === editForm.get('produit')!.value?.id ? editForm.get('produit')!.value : produitOption" *ngFor="let produitOption of produits; trackBy: trackById">{{ produitOption.id }}</option>
+                        <option [ngValue]="produitOption.id === editForm.get('produit')!.value?.id ? editForm.get('produit')!.value : produitOption" *ngFor="let produitOption of produits; trackBy: trackById">{{ produitOption.marque }}</option>
                     </select>
                 </div>
 
@@ -71,7 +71,7 @@
                     <label class="form-control-label" jhiTranslate="nexioApp.commande.client" for="field_client">Client</label>
                     <select class="form-control" id="field_client" name="client" formControlName="client">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="clientOption.id === editForm.get('client')!.value?.id ? editForm.get('client')!.value : clientOption" *ngFor="let clientOption of clients; trackBy: trackById">{{ clientOption.id }}</option>
+                        <option [ngValue]="clientOption.id === editForm.get('client')!.value?.id ? editForm.get('client')!.value : clientOption" *ngFor="let clientOption of clients; trackBy: trackById">{{ clientOption.nom }}</option>
                     </select>
                 </div>
             </div>
