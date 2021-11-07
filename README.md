@@ -2,12 +2,16 @@
 
 This POC was generated in order to answer To Nexio Technical Request (M. Patrick).
 
+It's deployed with at herokuapp : https://nexio-poc.herokuapp.com/ 
+
 ## Front-end (POC)
 Angular 10
+
 ## Back-end (POC)
 Spring Boot
 Spring Data
 JPA
+
 ## API REST (POC)
 ## Security (POC)
 Spring Security
