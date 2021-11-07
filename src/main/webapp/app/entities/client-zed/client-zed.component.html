@@ -24,7 +24,6 @@
                 <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
                     <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="login"><span jhiTranslate="nexioApp.client.login">Login</span> <fa-icon icon="sort"></fa-icon></th>
-                    <th scope="col"  jhiSortBy="motPasse"><span jhiTranslate="nexioApp.client.motPasse">Mot Passe</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="nom"><span jhiTranslate="nexioApp.client.nom">Nom</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="prenom"><span jhiTranslate="nexioApp.client.prenom">Prenom</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="civilite"><span jhiTranslate="nexioApp.client.civilite">Civilite</span> <fa-icon icon="sort"></fa-icon></th>
@@ -45,7 +44,6 @@
                 <tr *ngFor="let client of clients ;trackBy: trackId">
                     <td><a [routerLink]="['/client-zed', client.id, 'view']">{{ client.id }}</a></td>
                     <td>{{ client.login }}</td>
-                    <td>{{ client.motPasse }}</td>
                     <td>{{ client.nom }}</td>
                     <td>{{ client.prenom }}</td>
                     <td>{{ client.civilite }}</td>

@@ -32,26 +32,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="nexioApp.client.motPasse" for="field_motPasse">Mot Passe</label>
-                    <input type="text" class="form-control" name="motPasse" id="field_motPasse"
-                           formControlName="motPasse"/>
-                    <div *ngIf="editForm.get('motPasse')!.invalid && (editForm.get('motPasse')!.dirty || editForm.get('motPasse')!.touched)">
-                        <small class="form-text text-danger"
-                               *ngIf="editForm.get('motPasse')?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                        <small class="form-text text-danger"
-                               *ngIf="editForm.get('motPasse')?.errors?.minlength" jhiTranslate="entity.validation.minlength" [translateValues]="{ min: 8 }">
-                        This field is required to be at least 8 characters.
-                        </small>
-                        <small class="form-text text-danger"
-                               *ngIf="editForm.get('motPasse')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 20 }">
-                        This field cannot be longer than 20 characters.
-                        </small>
-                    </div>
-                </div>
-
-                <div class="form-group">
                     <label class="form-control-label" jhiTranslate="nexioApp.client.nom" for="field_nom">Nom</label>
                     <input type="text" class="form-control" name="nom" id="field_nom"
                            formControlName="nom"/>
@@ -72,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="nexioApp.client.prenom" for="field_prenom">Prenom</label>
+                    <label class="form-control-label" jhiTranslate="nexioApp.client.prenom" for="field_prenom">Prénom</label>
                     <input type="text" class="form-control" name="prenom" id="field_prenom"
                            formControlName="prenom"/>
                     <div *ngIf="editForm.get('prenom')!.invalid && (editForm.get('prenom')!.dirty || editForm.get('prenom')!.touched)">
@@ -92,7 +72,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="nexioApp.client.civilite" for="field_civilite">Civilite</label>
+                    <label class="form-control-label" jhiTranslate="nexioApp.client.civilite" for="field_civilite">Civilité</label>
                     <input type="text" class="form-control" name="civilite" id="field_civilite"
                            formControlName="civilite"/>
                     <div *ngIf="editForm.get('civilite')!.invalid && (editForm.get('civilite')!.dirty || editForm.get('civilite')!.touched)">
