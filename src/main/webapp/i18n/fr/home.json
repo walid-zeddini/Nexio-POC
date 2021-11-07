@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "Bienvenue !",
+    "subtitle": "Ceci est la page d'accueil",
+    "logged": {
+      "message": "Vous êtes connecté en tant que \"{{username}}\"."
+    }
+  }
+}

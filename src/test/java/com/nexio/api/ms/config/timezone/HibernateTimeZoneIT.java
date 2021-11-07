@@ -1,7 +1,6 @@
 package com.nexio.api.ms.config.timezone;
 
 import com.nexio.api.ms.NexioApp;
-import com.nexio.api.ms.config.TestSecurityConfiguration;
 import com.nexio.api.ms.repository.timezone.DateTimeWrapper;
 import com.nexio.api.ms.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = {NexioApp.class, TestSecurityConfiguration.class})
+@SpringBootTest(classes = NexioApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

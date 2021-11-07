@@ -3,7 +3,6 @@ package com.nexio.api.ms.repository;
 import com.nexio.api.ms.NexioApp;
 
 import com.nexio.api.ms.config.Constants;
-import com.nexio.api.ms.config.TestSecurityConfiguration;
 import com.nexio.api.ms.config.audit.AuditEventConverter;
 import com.nexio.api.ms.domain.PersistentAuditEvent;
 import org.junit.jupiter.api.BeforeEach;
@@ -29,7 +28,7 @@ import static com.nexio.api.ms.repository.CustomAuditEventRepository.EVENT_DATA_
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = {NexioApp.class, TestSecurityConfiguration.class})
+@SpringBootTest(classes = NexioApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

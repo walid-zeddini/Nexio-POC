@@ -1,0 +1,30 @@
+{
+  "nexioApp": {
+    "produit": {
+      "home": {
+        "title": "Produits",
+        "createLabel": "Create a new Produit",
+        "createOrEditLabel": "Create or edit a Produit",
+        "notFound": "No Produits found"
+      },
+      "created": "A new Produit is created with identifier {{ param }}",
+      "updated": "A Produit is updated with identifier {{ param }}",
+      "deleted": "A Produit is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Produit {{ id }}?"
+      },
+      "detail": {
+        "title": "Produit"
+      },
+      "designation": "Designation",
+      "marque": "Marque",
+      "modele": "Modele",
+      "configuration": "Configuration",
+      "prixUnitaire": "Prix Unitaire",
+      "quantite": "Quantite",
+      "commande": "Commande",
+      "categorie": "Categorie",
+      "categorie": "Categorie"
+    }
+  }
+}

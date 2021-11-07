@@ -1,7 +1,6 @@
 package com.nexio.api.ms.web.rest;
 
 import com.nexio.api.ms.NexioApp;
-import com.nexio.api.ms.config.TestSecurityConfiguration;
 import com.nexio.api.ms.domain.PersistentAuditEvent;
 import com.nexio.api.ms.repository.PersistenceAuditEventRepository;
 import com.nexio.api.ms.security.AuthoritiesConstants;
@@ -31,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = {NexioApp.class, TestSecurityConfiguration.class})
+@SpringBootTest(classes = NexioApp.class)
 @Transactional
 public class AuditResourceIT {
 

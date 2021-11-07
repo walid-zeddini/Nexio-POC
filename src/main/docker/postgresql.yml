@@ -3,9 +3,9 @@ services:
   nexio-postgresql:
     image: postgres:12.3
     # volumes:
-    #     - ~/volumes/jhipster/Nexio/postgresql/:/var/lib/postgresql/data/
+    #     - ~/volumes/jhipster/NEXIO/postgresql/:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=Nexio
+      - POSTGRES_USER=NEXIO
       - POSTGRES_PASSWORD=
       - POSTGRES_HOST_AUTH_METHOD=trust
     ports:

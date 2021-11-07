@@ -12,8 +12,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
-    url: jdbc:tc:postgresql:latest:///Nexio?TC_TMPFS=/testtmpfs:rw
-    username: Nexio
+    url: jdbc:tc:postgresql:latest:///NEXIO?TC_TMPFS=/testtmpfs:rw
+    username: NEXIO
     password:
     hikari:
       poolName: Hikari

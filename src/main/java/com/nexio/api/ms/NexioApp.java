@@ -33,7 +33,7 @@ public class NexioApp {
     }
 
     /**
-     * Initializes Nexio.
+     * Initializes NEXIO.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -94,12 +94,5 @@ public class NexioApp {
             serverPort,
             contextPath,
             env.getActiveProfiles());
-
-        String configServerStatus = env.getProperty("configserver.status");
-        if (configServerStatus == null) {
-            configServerStatus = "Not found or not setup for this application";
-        }
-        log.info("\n----------------------------------------------------------\n\t" +
-                "Config Server: \t{}\n----------------------------------------------------------", configServerStatus);
     }
 }
