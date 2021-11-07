@@ -192,17 +192,18 @@ If you need to re-run the Sonar phase, please be sure to specify at least the `i
 ./mvnw initialize sonar:sonar
 ```
 
-## Main Tools (POC)
-[node.js]: https://nodejs.org/
-[yarn]: https://yarnpkg.org/
-[webpack]: https://webpack.github.io/
-[angular cli]: https://cli.angular.io/
-[browsersync]: https://www.browsersync.io/
-[jest]: https://facebook.github.io/jest/
-[jasmine]: https://jasmine.github.io/2.0/introduction.html
-[protractor]: https://angular.github.io/protractor/
-[leaflet]: https://leafletjs.com/
-[definitelytyped]: https://definitelytyped.org/
+## Main Tools & Technos used for this POC
+
+ node.js : https://nodejs.org/
+ yarn : https://yarnpkg.org/
+ webpack : https://webpack.github.io/
+ angular cli : https://cli.angular.io/
+ browsersync : https://www.browsersync.io/
+ jest : https://facebook.github.io/jest/
+ jasmine : https://jasmine.github.io/2.0/introduction.html
+ protractor : https://angular.github.io/protractor/
+ leaflet : https://leafletjs.com/
+  definitelytyped : https://definitelytyped.org/
 
 ## ## ## ##  NB: Using Docker to simplify development (optional)
 
