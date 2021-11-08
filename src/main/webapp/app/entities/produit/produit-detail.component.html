@@ -35,7 +35,7 @@
                 <dt><span jhiTranslate="nexioApp.produit.categorie">Categorie</span></dt>
                 <dd>
                     <div *ngIf="produit.categorie">
-                        <a [routerLink]="['/categorie', produit.categorie?.id, 'view']">{{ produit.categorie?.id }}</a>
+                        <a [routerLink]="['/categorie', produit.categorie?.id, 'view']">{{ produit.categorie?.libelle }}</a>
                     </div>
                 </dd>
             </dl>

@@ -29,7 +29,7 @@
                     <th scope="col"  jhiSortBy="caracteristiques"><span jhiTranslate="nexioApp.produit.caracteristiques">Caracteristiques</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="prixUnitaire"><span jhiTranslate="nexioApp.produit.prixUnitaire">Prix Unitaire</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="quantite"><span jhiTranslate="nexioApp.produit.quantite">Quantite</span> <fa-icon icon="sort"></fa-icon></th>
-                    <th scope="col"  jhiSortBy="categorie.id"><span jhiTranslate="nexioApp.produit.categorie">Categorie</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="categorie.libelle"><span jhiTranslate="nexioApp.produit.categorie">Categorie</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -44,7 +44,7 @@
                     <td>{{ produit.quantite }}</td>
                     <td>
                         <div *ngIf="produit.categorie">
-                            <a [routerLink]="['/categorie', produit.categorie?.id, 'view']" >{{ produit.categorie?.id }}</a>
+                            <a [routerLink]="['/categorie', produit.categorie?.id, 'view']" >{{ produit.categorie?.libelle }}</a>
                         </div>
                     </td>
                     <td class="text-right">

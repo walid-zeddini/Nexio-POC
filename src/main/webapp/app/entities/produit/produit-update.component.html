@@ -111,7 +111,7 @@
                     <label class="form-control-label" jhiTranslate="nexioApp.produit.categorie" for="field_categorie">Categorie</label>
                     <select class="form-control" id="field_categorie" name="categorie" formControlName="categorie">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="categorieOption.id === editForm.get('categorie')!.value?.id ? editForm.get('categorie')!.value : categorieOption" *ngFor="let categorieOption of categories; trackBy: trackById">{{ categorieOption.id }}</option>
+                        <option [ngValue]="categorieOption.id === editForm.get('categorie')!.value?.id ? editForm.get('categorie')!.value : categorieOption" *ngFor="let categorieOption of categories; trackBy: trackById">{{ categorieOption.libelle }}</option>
                     </select>
                 </div>
             </div>
