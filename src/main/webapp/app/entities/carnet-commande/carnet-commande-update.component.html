@@ -79,7 +79,7 @@
                     <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.produit" for="field_produit">Produit</label>
                     <select class="form-control" id="field_produit" name="produit" formControlName="produit">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="produitOption.id === editForm.get('produit')!.value?.id ? editForm.get('produit')!.value : produitOption" *ngFor="let produitOption of produits; trackBy: trackById">{{ produitOption.id }}</option>
+                        <option [ngValue]="produitOption.id === editForm.get('produit')!.value?.id ? editForm.get('produit')!.value : produitOption" *ngFor="let produitOption of produits; trackBy: trackById">{{ produitOption.marque }} {{ produitOption.modele }}</option>
                     </select>
                 </div>
 
@@ -87,7 +87,7 @@
                     <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.commande" for="field_commande">Commande</label>
                     <select class="form-control" id="field_commande" name="commande" formControlName="commande">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="commandeOption.id === editForm.get('commande')!.value?.id ? editForm.get('commande')!.value : commandeOption" *ngFor="let commandeOption of commandes; trackBy: trackById">{{ commandeOption.id }}</option>
+                        <option [ngValue]="commandeOption.id === editForm.get('commande')!.value?.id ? editForm.get('commande')!.value : commandeOption" *ngFor="let commandeOption of commandes; trackBy: trackById">{{ commandeOption.numero }}</option>
                     </select>
                 </div>
             </div>

@@ -27,13 +27,13 @@
                 <dt><span jhiTranslate="nexioApp.carnetCommande.produit">Produit</span></dt>
                 <dd>
                     <div *ngIf="carnetCommande.produit">
-                        <a [routerLink]="['/produit', carnetCommande.produit?.id, 'view']">{{ carnetCommande.produit?.id }}</a>
+                        <a [routerLink]="['/produit', carnetCommande.produit?.id, 'view']">{{ carnetCommande.produit?.marque }} {{ carnetCommande.produit?.modele }}</a>
                     </div>
                 </dd>
                 <dt><span jhiTranslate="nexioApp.carnetCommande.commande">Commande</span></dt>
                 <dd>
                     <div *ngIf="carnetCommande.commande">
-                        <a [routerLink]="['/commande', carnetCommande.commande?.id, 'view']">{{ carnetCommande.commande?.id }}</a>
+                        <a [routerLink]="['/commande', carnetCommande.commande?.id, 'view']">{{ carnetCommande.commande?.numero }}</a>
                     </div>
                 </dd>
             </dl>
