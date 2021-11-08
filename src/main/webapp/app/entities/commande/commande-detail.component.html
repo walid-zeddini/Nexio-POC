@@ -27,7 +27,7 @@
                 <dt><span jhiTranslate="nexioApp.commande.client">Client</span></dt>
                 <dd>
                     <div *ngIf="commande.client">
-                        <a [routerLink]="['/client', commande.client?.id, 'view']">{{ commande.client?.id }}</a>
+                        <a [routerLink]="['/client', commande.client?.id, 'view']">{{ commande.client?.nom }} {{ commande.client?.prenom }}</a>
                     </div>
                 </dd>
             </dl>

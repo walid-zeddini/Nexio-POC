@@ -27,7 +27,7 @@
                     <th scope="col"  jhiSortBy="date"><span jhiTranslate="nexioApp.commande.date">Date</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="prixTotal"><span jhiTranslate="nexioApp.commande.prixTotal">Prix Total</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="etat"><span jhiTranslate="nexioApp.commande.etat">Etat</span> <fa-icon icon="sort"></fa-icon></th>
-                    <th scope="col"  jhiSortBy="client.id"><span jhiTranslate="nexioApp.commande.client">Client</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="client.nom"><span jhiTranslate="nexioApp.commande.client">Client</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -40,7 +40,7 @@
                     <td>{{ commande.etat }}</td>
                     <td>
                         <div *ngIf="commande.client">
-                            <a [routerLink]="['/client', commande.client?.id, 'view']" >{{ commande.client?.id }}</a>
+                            <a [routerLink]="['/client', commande.client?.id, 'view']" >{{ commande.client?.nom }} {{ commande.client?.prenom }}</a>
                         </div>
                     </td>
                     <td class="text-right">
