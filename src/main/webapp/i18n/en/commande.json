@@ -2,23 +2,23 @@
   "nexioApp": {
     "commande": {
       "home": {
-        "title": "Commandes",
-        "createLabel": "Create a new Commande",
-        "createOrEditLabel": "Create or edit a Commande",
-        "notFound": "No Commandes found"
+        "title": "Orders",
+        "createLabel": "Create a new Order",
+        "createOrEditLabel": "Create or edit an Order",
+        "notFound": "No Orders found"
       },
-      "created": "A new Commande is created with identifier {{ param }}",
-      "updated": "A Commande is updated with identifier {{ param }}",
-      "deleted": "A Commande is deleted with identifier {{ param }}",
+      "created": "A new Order is created with identifier {{ param }}",
+      "updated": "A Order is updated with identifier {{ param }}",
+      "deleted": "A Order is deleted with identifier {{ param }}",
       "delete": {
-        "question": "Are you sure you want to delete Commande {{ id }}?"
+        "question": "Are you sure you want to delete Order {{ id }}?"
       },
       "detail": {
-        "title": "Commande"
+        "title": "Order"
       },
       "numero": "Numero",
       "date": "Date",
-      "prixTotal": "Total Price ",
+      "prixTotal": "Total Price",
       "etat": "State",
       "carnet": "Carnet",
       "client": "Client"

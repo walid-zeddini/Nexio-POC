@@ -18,10 +18,10 @@
       },
       "code": "Code",
       "marque": "Marque",
-      "modele": "Modele",
-      "caracteristiques": "Caracteristiques",
+      "modele": "Modèle",
+      "caracteristiques": "Caractéristiques",
       "prixUnitaire": "Prix Unitaire",
-      "quantite": "Quantite",
+      "quantite": "Quantité",
       "carnet": "Carnet",
       "categorie": "Categorie"
     }

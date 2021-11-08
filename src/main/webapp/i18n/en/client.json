@@ -19,13 +19,13 @@
       "code": "Code",
       "nom": "Name",
       "prenom": "Subname",
-      "dateNaissance": "Birth Date",
+      "dateNaissance": "Date of Birth",
       "adresse": "Adress",
       "ville": "Town",
-      "codePostal": "Postal Code ",
-      "tel": "Tel",
+      "codePostal": "Postal Code",
+      "tel": "Tel.",
       "fax": "Fax",
-      "gsm": "Gsm",
+      "gsm": "Mobile",
       "email": "Email",
       "commande": "Commande"
     }

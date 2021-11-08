@@ -23,9 +23,9 @@
       "adresse": "Adresse",
       "ville": "Ville",
       "codePostal": "Code Postal",
-      "tel": "Tél",
+      "tel": "Tél.",
       "fax": "Fax",
-      "gsm": "Gsm",
+      "gsm": "Mobile",
       "email": "Email",
       "commande": "Commande"
     }

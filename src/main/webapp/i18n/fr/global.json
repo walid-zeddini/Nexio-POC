@@ -1,6 +1,13 @@
 {
   "global": {
-    "title": "NEXIO",
+    "zeddini": {
+      "gettoknow": "Pour faire connaissance:)",
+      "name": "Walid Zeddini",
+      "briefme": "En bref, qui suis je ?",
+      "end": "Enfin, un petit aperçu sur mes Cours 2021 !",
+      "mygithub": "Le code source de ce POC se trouve sur le"
+    },
+    "title": "NEXIO_MONOLIT-REST-JWT",
     "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
     "menu": {
       "home": "Accueil",
@@ -55,7 +62,7 @@
         "authenticated": {
           "prefix": "Si vous voulez vous ",
           "link": "connecter",
-          "suffix": ", vous pouvez utiliser les comptes par défaut : <br/> - Administrateur (nom d'utilisateur=\"admin\" et mot de passe =\"admin\") <br/> - Utilisateur (nom d'utilisateur=\"user\" et mot de passe =\"user\")."
+          "suffix": ", vous pouvez utiliser les comptes par défaut : <br/> - Administrateur (nom d'utilisateur=\"nexioadmin\" et mot de passe =\"nexio123+-\") <br/> - Utilisateur (nom d'utilisateur=\"nexiouser\" et mot de passe =\"nexio123+-\")."
         },
         "register": {
           "noaccount": "Vous n'avez pas encore de compte ?",
