@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: INFO
     io.github.jhipster: INFO
-    com.nexio.api.ms: INFO
+    com.nexio.poc: INFO
 
 management:
   metrics:
@@ -100,7 +100,7 @@ jhipster:
         # - In the JHipster Registry (which includes a Spring Cloud Config server)
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: MWJmZjMxZmVmMGY3MTc2Yzc3ODdmNTk4NzEzYzA4YWFkZGI2YzkxOTFhMjZiOTJjMTQ0NjI2MzdjYTI3N2E5Zjc0Y2E1MzgyZmY5ZWM0YjU5NzYzNTZmNTk0ZmVjYzVlZjIxNmU3YTQwZjJkMzM5NjQyOTIwZGVkNzY0ZDEzNzA=
+        base64-secret: OTcyNjAwNTRmMWU3ZTY2Y2M2ZWZmY2YwMjUyNDcyYWNmN2ViZDJkYWRiNjFlM2IxNjljNjIyOTlhMTIyODk5Nzk3MTdhOWNhNDA0OGY4YWU4ZWM3OGRhNDRlOGJlMzZiYjM4MGE1NDRkMDgxY2U5ZGQxMDNmMzc5OTA2M2E0NmE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

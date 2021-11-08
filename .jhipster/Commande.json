@@ -2,15 +2,26 @@
   "name": "Commande",
   "fields": [
     {
-      "fieldName": "qte",
-      "fieldType": "Long",
+      "fieldName": "numero",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "minlength",
+        "maxlength",
+        "required"
+      ],
+      "fieldValidateRulesMinlength": "2",
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
       "fieldValidateRules": [
         "required"
       ]
     },
     {
-      "fieldName": "date",
-      "fieldType": "LocalDate",
+      "fieldName": "prixTotal",
+      "fieldType": "BigDecimal",
       "fieldValidateRules": [
         "required"
       ]
@@ -25,11 +36,10 @@
   ],
   "relationships": [
     {
-      "relationshipType": "many-to-one",
-      "otherEntityName": "produit",
+      "relationshipType": "one-to-many",
+      "otherEntityName": "carnetCommande",
       "otherEntityRelationshipName": "commande",
-      "relationshipName": "produit",
-      "otherEntityField": "id"
+      "relationshipName": "carnet"
     },
     {
       "relationshipType": "many-to-one",
@@ -39,7 +49,7 @@
       "otherEntityField": "id"
     }
   ],
-  "changelogDate": "20211106211209",
+  "changelogDate": "20211108152324",
   "entityTableName": "commande",
   "dto": "no",
   "pagination": "pagination",
@@ -49,6 +59,5 @@
   "readOnly": false,
   "embedded": false,
   "clientRootFolder": "",
-  "applications": "*",
-  "angularJSSuffix": "zed"
+  "applications": "*"
 }

@@ -1,0 +1,47 @@
+entity Produit {
+	designation String maxlength(40) required,
+    marque String required maxlength(30),
+    modele String maxlength(20) required,
+    configuration String maxlength(50) required ,
+    prixUnitaire BigDecimal required,
+    quantite Long required
+}
+entity Client {
+	login String minlength(6) maxlength(20) required,
+    motPasse String minlength(8) maxlength(20)  required,
+    nom String minlength(2) maxlength(30)  required,
+    prenom String minlength(2) maxlength(30) required,
+    civilite String minlength(2) maxlength(4)  required,
+    dateNaissance String minlength(10) maxlength(10)  required,
+    numero String minlength(1) maxlength(4) required,
+    rue String minlength(2) maxlength(30) required,
+    commune String minlength(2) maxlength(30) required,
+    ville String minlength(2) maxlength(30) required,
+    codePostal Long required,
+    tel String minlength(6) maxlength(30) required,
+    fax String minlength(6) maxlength(30) required,
+    gsm String minlength(6) maxlength(30) required,
+    email String minlength(6) maxlength(30) required
+}
+
+entity Categorie {
+	code String required,
+    libelle String required 
+}
+entity Commande {
+	qte Long required,
+    date LocalDate required,
+    etat Long required 
+}
+
+relationship OneToMany {
+    Produit{commande} to Commande{produit},
+	Client{commande} to Commande{client},
+    Categorie{produit} to Produit{categorie}
+	Produit{categorie} to Categorie{produit}
+}
+// Set pagination options
+paginate * with pagination
+service * with serviceClass except User
+// Set an angular suffix
+angularSuffix * with zed

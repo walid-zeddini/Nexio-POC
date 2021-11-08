@@ -22,16 +22,9 @@
       "otherEntityName": "produit",
       "otherEntityRelationshipName": "categorie",
       "relationshipName": "produit"
-    },
-    {
-      "relationshipType": "many-to-one",
-      "otherEntityName": "produit",
-      "otherEntityRelationshipName": "categorie",
-      "relationshipName": "produit",
-      "otherEntityField": "id"
     }
   ],
-  "changelogDate": "20211106211109",
+  "changelogDate": "20211108152224",
   "entityTableName": "categorie",
   "dto": "no",
   "pagination": "pagination",
@@ -41,6 +34,5 @@
   "readOnly": false,
   "embedded": false,
   "clientRootFolder": "",
-  "applications": "*",
-  "angularJSSuffix": "zed"
+  "applications": "*"
 }

@@ -1,0 +1,89 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="nexioApp.carnetCommande.home.title">Carnet Commandes</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-carnet-commande" [routerLink]="['/carnet-commande/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="nexioApp.carnetCommande.home.createLabel">
+            Create a new Carnet Commande
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="carnetCommandes?.length === 0">
+        <span jhiTranslate="nexioApp.carnetCommande.home.notFound">No carnetCommandes found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="carnetCommandes && carnetCommandes.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="qte"><span jhiTranslate="nexioApp.carnetCommande.qte">Qte</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="prixUnitaire"><span jhiTranslate="nexioApp.carnetCommande.prixUnitaire">Prix Unitaire</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="prixTotal"><span jhiTranslate="nexioApp.carnetCommande.prixTotal">Prix Total</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="etat"><span jhiTranslate="nexioApp.carnetCommande.etat">Etat</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="produit.id"><span jhiTranslate="nexioApp.carnetCommande.produit">Produit</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="commande.id"><span jhiTranslate="nexioApp.carnetCommande.commande">Commande</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let carnetCommande of carnetCommandes ;trackBy: trackId">
+                    <td><a [routerLink]="['/carnet-commande', carnetCommande.id, 'view']">{{ carnetCommande.id }}</a></td>
+                    <td>{{ carnetCommande.qte }}</td>
+                    <td>{{ carnetCommande.prixUnitaire }}</td>
+                    <td>{{ carnetCommande.prixTotal }}</td>
+                    <td>{{ carnetCommande.etat }}</td>
+                    <td>
+                        <div *ngIf="carnetCommande.produit">
+                            <a [routerLink]="['/produit', carnetCommande.produit?.id, 'view']" >{{ carnetCommande.produit?.id }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="carnetCommande.commande">
+                            <a [routerLink]="['/commande', carnetCommande.commande?.id, 'view']" >{{ carnetCommande.commande?.id }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/carnet-commande', carnetCommande.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/carnet-commande', carnetCommande.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(carnetCommande)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="carnetCommandes && carnetCommandes.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
+    </div>
+</div>

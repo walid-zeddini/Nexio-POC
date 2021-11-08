@@ -2,7 +2,7 @@
   "name": "Produit",
   "fields": [
     {
-      "fieldName": "designation",
+      "fieldName": "code",
       "fieldType": "String",
       "fieldValidateRules": [
         "maxlength",
@@ -17,7 +17,7 @@
         "required",
         "maxlength"
       ],
-      "fieldValidateRulesMaxlength": "30"
+      "fieldValidateRulesMaxlength": "70"
     },
     {
       "fieldName": "modele",
@@ -26,16 +26,16 @@
         "maxlength",
         "required"
       ],
-      "fieldValidateRulesMaxlength": "20"
+      "fieldValidateRulesMaxlength": "100"
     },
     {
-      "fieldName": "configuration",
+      "fieldName": "caracteristiques",
       "fieldType": "String",
       "fieldValidateRules": [
         "maxlength",
         "required"
       ],
-      "fieldValidateRulesMaxlength": "50"
+      "fieldValidateRulesMaxlength": "100"
     },
     {
       "fieldName": "prixUnitaire",
@@ -55,15 +55,9 @@
   "relationships": [
     {
       "relationshipType": "one-to-many",
-      "otherEntityName": "commande",
+      "otherEntityName": "carnetCommande",
       "otherEntityRelationshipName": "produit",
-      "relationshipName": "commande"
-    },
-    {
-      "relationshipType": "one-to-many",
-      "otherEntityName": "categorie",
-      "otherEntityRelationshipName": "produit",
-      "relationshipName": "categorie"
+      "relationshipName": "carnet"
     },
     {
       "relationshipType": "many-to-one",
@@ -73,7 +67,7 @@
       "otherEntityField": "id"
     }
   ],
-  "changelogDate": "20211106210909",
+  "changelogDate": "20211108152024",
   "entityTableName": "produit",
   "dto": "no",
   "pagination": "pagination",
@@ -83,6 +77,5 @@
   "readOnly": false,
   "embedded": false,
   "clientRootFolder": "",
-  "applications": "*",
-  "angularJSSuffix": "zed"
+  "applications": "*"
 }

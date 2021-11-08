@@ -16,10 +16,11 @@
       "detail": {
         "title": "Commande"
       },
-      "qte": "Qte",
+      "numero": "Numero",
       "date": "Date",
-      "etat": "Etat",
-      "produit": "Produit",
+      "prixTotal": "Total Price ",
+      "etat": "State",
+      "carnet": "Carnet",
       "client": "Client"
     }
   }

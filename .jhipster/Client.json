@@ -2,25 +2,14 @@
   "name": "Client",
   "fields": [
     {
-      "fieldName": "login",
+      "fieldName": "code",
       "fieldType": "String",
       "fieldValidateRules": [
         "minlength",
         "maxlength",
         "required"
       ],
-      "fieldValidateRulesMinlength": "6",
-      "fieldValidateRulesMaxlength": "20"
-    },
-    {
-      "fieldName": "motPasse",
-      "fieldType": "String",
-      "fieldValidateRules": [
-        "minlength",
-        "maxlength",
-        "required"
-      ],
-      "fieldValidateRulesMinlength": "8",
+      "fieldValidateRulesMinlength": "2",
       "fieldValidateRulesMaxlength": "20"
     },
     {
@@ -46,40 +35,14 @@
       "fieldValidateRulesMaxlength": "30"
     },
     {
-      "fieldName": "civilite",
-      "fieldType": "String",
-      "fieldValidateRules": [
-        "minlength",
-        "maxlength",
-        "required"
-      ],
-      "fieldValidateRulesMinlength": "2",
-      "fieldValidateRulesMaxlength": "4"
-    },
-    {
       "fieldName": "dateNaissance",
-      "fieldType": "String",
+      "fieldType": "LocalDate",
       "fieldValidateRules": [
-        "minlength",
-        "maxlength",
         "required"
-      ],
-      "fieldValidateRulesMinlength": "10",
-      "fieldValidateRulesMaxlength": "10"
+      ]
     },
     {
-      "fieldName": "numero",
-      "fieldType": "String",
-      "fieldValidateRules": [
-        "minlength",
-        "maxlength",
-        "required"
-      ],
-      "fieldValidateRulesMinlength": "1",
-      "fieldValidateRulesMaxlength": "4"
-    },
-    {
-      "fieldName": "rue",
+      "fieldName": "adresse",
       "fieldType": "String",
       "fieldValidateRules": [
         "minlength",
@@ -87,18 +50,7 @@
         "required"
       ],
       "fieldValidateRulesMinlength": "2",
-      "fieldValidateRulesMaxlength": "30"
-    },
-    {
-      "fieldName": "commune",
-      "fieldType": "String",
-      "fieldValidateRules": [
-        "minlength",
-        "maxlength",
-        "required"
-      ],
-      "fieldValidateRulesMinlength": "2",
-      "fieldValidateRulesMaxlength": "30"
+      "fieldValidateRulesMaxlength": "50"
     },
     {
       "fieldName": "ville",
@@ -123,8 +75,7 @@
       "fieldType": "String",
       "fieldValidateRules": [
         "minlength",
-        "maxlength",
-        "required"
+        "maxlength"
       ],
       "fieldValidateRulesMinlength": "6",
       "fieldValidateRulesMaxlength": "30"
@@ -134,8 +85,7 @@
       "fieldType": "String",
       "fieldValidateRules": [
         "minlength",
-        "maxlength",
-        "required"
+        "maxlength"
       ],
       "fieldValidateRulesMinlength": "6",
       "fieldValidateRulesMaxlength": "30"
@@ -171,7 +121,7 @@
       "relationshipName": "commande"
     }
   ],
-  "changelogDate": "20211106211009",
+  "changelogDate": "20211108152124",
   "entityTableName": "client",
   "dto": "no",
   "pagination": "pagination",
@@ -181,6 +131,5 @@
   "readOnly": false,
   "embedded": false,
   "clientRootFolder": "",
-  "applications": "*",
-  "angularJSSuffix": "zed"
+  "applications": "*"
 }

@@ -6,11 +6,12 @@
       "home": "Accueil",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
-        "main": "Services",
-        "produitZed": "Produit",
-        "clientZed": "Client",
-        "categorieZed": "Categorie",
-        "commandeZed": "Commande",
+        "main": "Entités",
+        "produit": "Produit",
+        "client": "Client",
+        "categorie": "Categorie",
+        "commande": "Commande",
+        "carnetCommande": "Carnet Commande",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

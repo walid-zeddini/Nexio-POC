@@ -16,15 +16,14 @@
       "detail": {
         "title": "Produit"
       },
-      "designation": "Désignation",
+      "code": "Code",
       "marque": "Marque",
-      "modele": "Modèle",
-      "configuration": "Configuration",
+      "modele": "Modele",
+      "caracteristiques": "Caracteristiques",
       "prixUnitaire": "Prix Unitaire",
-      "quantite": "Quantité",
-      "commande": "Commande",
-      "categorie": "Catégorie",
-      "categorie": "Catégorie"
+      "quantite": "Quantite",
+      "carnet": "Carnet",
+      "categorie": "Categorie"
     }
   }
 }

@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="carnetCommande">
+            <h2><span jhiTranslate="nexioApp.carnetCommande.detail.title">Carnet Commande</span> {{ carnetCommande.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="nexioApp.carnetCommande.qte">Qte</span></dt>
+                <dd>
+                    <span>{{ carnetCommande.qte }}</span>
+                </dd>
+                <dt><span jhiTranslate="nexioApp.carnetCommande.prixUnitaire">Prix Unitaire</span></dt>
+                <dd>
+                    <span>{{ carnetCommande.prixUnitaire }}</span>
+                </dd>
+                <dt><span jhiTranslate="nexioApp.carnetCommande.prixTotal">Prix Total</span></dt>
+                <dd>
+                    <span>{{ carnetCommande.prixTotal }}</span>
+                </dd>
+                <dt><span jhiTranslate="nexioApp.carnetCommande.etat">Etat</span></dt>
+                <dd>
+                    <span>{{ carnetCommande.etat }}</span>
+                </dd>
+                <dt><span jhiTranslate="nexioApp.carnetCommande.produit">Produit</span></dt>
+                <dd>
+                    <div *ngIf="carnetCommande.produit">
+                        <a [routerLink]="['/produit', carnetCommande.produit?.id, 'view']">{{ carnetCommande.produit?.id }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="nexioApp.carnetCommande.commande">Commande</span></dt>
+                <dd>
+                    <div *ngIf="carnetCommande.commande">
+                        <a [routerLink]="['/commande', carnetCommande.commande?.id, 'view']">{{ carnetCommande.commande?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/carnet-commande', carnetCommande.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

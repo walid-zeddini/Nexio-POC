@@ -1,0 +1,106 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-carnet-commande-heading" jhiTranslate="nexioApp.carnetCommande.home.createOrEditLabel">Create or edit a Carnet Commande</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.qte" for="field_qte">Qte</label>
+                    <input type="number" class="form-control" name="qte" id="field_qte"
+                           formControlName="qte"/>
+                    <div *ngIf="editForm.get('qte')!.invalid && (editForm.get('qte')!.dirty || editForm.get('qte')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('qte')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('qte')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.prixUnitaire" for="field_prixUnitaire">Prix Unitaire</label>
+                    <input type="number" class="form-control" name="prixUnitaire" id="field_prixUnitaire"
+                           formControlName="prixUnitaire"/>
+                    <div *ngIf="editForm.get('prixUnitaire')!.invalid && (editForm.get('prixUnitaire')!.dirty || editForm.get('prixUnitaire')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('prixUnitaire')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('prixUnitaire')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.prixTotal" for="field_prixTotal">Prix Total</label>
+                    <input type="number" class="form-control" name="prixTotal" id="field_prixTotal"
+                           formControlName="prixTotal"/>
+                    <div *ngIf="editForm.get('prixTotal')!.invalid && (editForm.get('prixTotal')!.dirty || editForm.get('prixTotal')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('prixTotal')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('prixTotal')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.etat" for="field_etat">Etat</label>
+                    <input type="number" class="form-control" name="etat" id="field_etat"
+                           formControlName="etat"/>
+                    <div *ngIf="editForm.get('etat')!.invalid && (editForm.get('etat')!.dirty || editForm.get('etat')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('etat')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('etat')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.produit" for="field_produit">Produit</label>
+                    <select class="form-control" id="field_produit" name="produit" formControlName="produit">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="produitOption.id === editForm.get('produit')!.value?.id ? editForm.get('produit')!.value : produitOption" *ngFor="let produitOption of produits; trackBy: trackById">{{ produitOption.id }}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="nexioApp.carnetCommande.commande" for="field_commande">Commande</label>
+                    <select class="form-control" id="field_commande" name="commande" formControlName="commande">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="commandeOption.id === editForm.get('commande')!.value?.id ? editForm.get('commande')!.value : commandeOption" *ngFor="let commandeOption of commandes; trackBy: trackById">{{ commandeOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

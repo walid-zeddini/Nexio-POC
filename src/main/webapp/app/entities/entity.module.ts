@@ -5,20 +5,24 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule.forChild([
       {
-        path: 'produit-zed',
-        loadChildren: () => import('./produit-zed/produit-zed.module').then(m => m.NexioProduitZedModule),
+        path: 'produit',
+        loadChildren: () => import('./produit/produit.module').then(m => m.NexioProduitModule),
       },
       {
-        path: 'client-zed',
-        loadChildren: () => import('./client-zed/client-zed.module').then(m => m.NexioClientZedModule),
+        path: 'client',
+        loadChildren: () => import('./client/client.module').then(m => m.NexioClientModule),
       },
       {
-        path: 'categorie-zed',
-        loadChildren: () => import('./categorie-zed/categorie-zed.module').then(m => m.NexioCategorieZedModule),
+        path: 'categorie',
+        loadChildren: () => import('./categorie/categorie.module').then(m => m.NexioCategorieModule),
       },
       {
-        path: 'commande-zed',
-        loadChildren: () => import('./commande-zed/commande-zed.module').then(m => m.NexioCommandeZedModule),
+        path: 'commande',
+        loadChildren: () => import('./commande/commande.module').then(m => m.NexioCommandeModule),
+      },
+      {
+        path: 'carnet-commande',
+        loadChildren: () => import('./carnet-commande/carnet-commande.module').then(m => m.NexioCarnetCommandeModule),
       },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),

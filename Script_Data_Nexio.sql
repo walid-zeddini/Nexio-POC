@@ -2,26 +2,26 @@
  -- ----------------------------
 -- Insertions des donnes
 -- ----------------------------
-INSERT INTO categorie VALUES ('1', '1', 'LabTops');
-INSERT INTO categorie VALUES ('2', '2', 'Ordinateurs');
-INSERT INTO categorie VALUES ('3', '3', 'CD et DVD Drives');
-INSERT INTO categorie VALUES ('4', '4', 'Hard Drives');
-INSERT INTO categorie VALUES ('5', '5', 'Inkjet Printers');
-INSERT INTO categorie VALUES ('6', '6', 'Internet Routers');
-INSERT INTO categorie VALUES ('7', '7', 'Keyboards');
-INSERT INTO categorie VALUES ('8', '8', 'Laser Printers');
-INSERT INTO categorie VALUES ('9', '9', 'Netbooks');
-INSERT INTO categorie VALUES ('10', '10', 'Network Adapters');
-INSERT INTO categorie VALUES ('11', '11', 'Network Switches');
-INSERT INTO categorie VALUES ('12', '12', 'Processors (CPUs)');
-INSERT INTO categorie VALUES ('13', '13', 'Scanners');
-INSERT INTO categorie VALUES ('14', '14', 'SD Secure Digital');
-INSERT INTO categorie VALUES ('15', '15', 'Sound Cards');
-INSERT INTO categorie VALUES ('16', '16', 'Speakers et Audio');
-INSERT INTO categorie VALUES ('17', '17', 'USB Flash Drives');
-INSERT INTO categorie VALUES ('18', '18', 'Video Cards');
-INSERT INTO categorie VALUES ('19', '19', 'Webcams');
-INSERT INTO categorie VALUES ('20', '20', 'Wireless Accessories');
+INSERT INTO categorie VALUES ('1', 'LTP', 'LabTops');
+INSERT INTO categorie VALUES ('2', 'ORD', 'Ordinateurs');
+INSERT INTO categorie VALUES ('3', 'CVD', 'CD et DVD Drives');
+INSERT INTO categorie VALUES ('4', 'HDR', 'Hard Drives');
+INSERT INTO categorie VALUES ('5', 'PRI', 'Inkjet Printers');
+INSERT INTO categorie VALUES ('6', 'ROUT', 'Internet Routers');
+INSERT INTO categorie VALUES ('7', 'BEY', 'Keyboards');
+INSERT INTO categorie VALUES ('8', 'LPR', 'Laser Printers');
+INSERT INTO categorie VALUES ('9', 'NTB', 'Netbooks');
+INSERT INTO categorie VALUES ('10', 'NTA', 'Network Adapters');
+INSERT INTO categorie VALUES ('11', 'NTS', 'Network Switches');
+INSERT INTO categorie VALUES ('12', 'CPU', 'Processors (CPUs)');
+INSERT INTO categorie VALUES ('13', 'SCA', 'Scanners');
+INSERT INTO categorie VALUES ('14', 'SDD', 'SD Secure Digital');
+INSERT INTO categorie VALUES ('15', 'SON', 'Sound Cards');
+INSERT INTO categorie VALUES ('16', 'SPK', 'Speakers et Audio');
+INSERT INTO categorie VALUES ('17', 'USB', 'USB Flash Drives');
+INSERT INTO categorie VALUES ('18', 'VID', 'Video Cards');
+INSERT INTO categorie VALUES ('19', 'CAM', 'Webcams');
+INSERT INTO categorie VALUES ('20', 'WIR', 'Wireless Accessories');
 
 
 

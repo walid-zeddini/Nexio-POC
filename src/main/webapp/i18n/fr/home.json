@@ -1,9 +1,19 @@
 {
   "home": {
-    "title": "Bienvenue !",
+    "title": "Bienvenue!",
     "subtitle": "Ceci est la page d'accueil",
     "logged": {
       "message": "Vous êtes connecté en tant que \"{{username}}\"."
-    }
+    },
+    "question": "Si vous avez des questions à propos:",
+    "link": {
+      "homepage": "Page d'accueil ",
+      "stackoverflow": " Stack Overflow",
+      "bugtracker": " bug tracker",
+      "chat": " public chat room",
+      "follow": "Suivez @ sur Twitter"
+    },
+    "like": "Si vous aimez , donnez nous une étoile sur",
+    "github": "GitHub "
   }
 }
