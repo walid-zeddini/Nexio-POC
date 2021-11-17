@@ -8,7 +8,7 @@
       "mygithub": "Le code source de ce POC se trouve sur le",
       "about": "A Propos",
       "tonexio": "Pour Nexio :",
-      "messagenexio": "S'agissant d'un POC et étant pressé par le temps, j'ai opté pour générer la partie Front avec Angular 10 et la partie Back avec Spring Boot en utilisant JWT et Spring Security et bien évidemment le REST avec une base PostgreSQL. La version avec les microservices et OAuth2 est encours avec un serveur d'authentification Key Cloak  :) "
+      "messagenexio": "S'agissant d'un POC et étant pressé par le temps, j'ai opté pour générer la partie Front avec Angular 10 et la partie Back avec Spring Boot en utilisant JWT et Spring Security et bien évidemment le REST avec une base PostgreSQL.La version Microservice et OAuth2 (Serveur KeyCloak) est disponible avec Swagger UI, deux Microservices autonomes avec deux Datasource différentes qui se communiquent via Open Fein et Resilience4J:"
     },
     "title": "NEXIO :) ",
     "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
