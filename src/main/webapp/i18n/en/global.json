@@ -7,8 +7,8 @@
       "end": "Finally, an Overview on my Courses 2021 !",
       "mygithub": "Source code of this  POC is on ",
       "about": "About",
-      "tonexio": "For Nexio",
-      "messagenexio": "Being a POC and being pressed for time, I opted to generate the Front part with Angular 10 and the Back part with Spring Boot using JWT and Spring Security and of course the REST with a PostgreSQL database.The version with microservices and OAuth2 is (Serveur KeyCloak)   est available with Swagger UI, two Microservices  with two diffeents Datasource communicating via Open Fein and Resilience4J:"
+      "tonexio": "For Students",
+      "messagenexio": "Being a POC, it's interesting for opting to generate with tools like Jhipter : the Front part with Angular 10 and the Back part with Spring Boot using JWT and Spring Security and of course the REST with a PostgreSQL database.The version with microservices and OAuth2 is (Serveur KeyCloak)   est available with Swagger UI, two Microservices  with two diffeents Datasource communicating via Open Fein and Resilience4J:"
     },
     "title": "NEXIO :)",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
